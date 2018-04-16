@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(bot)
+set(-std=c++11 -Wall)
+set(SOURCES_LIST C/main.cpp C/main.h A/index.h B/lib.h)
+include_directories(A C)
+add_subdirectory(B)
+add_executable(bot ${SOURCES_LIST})

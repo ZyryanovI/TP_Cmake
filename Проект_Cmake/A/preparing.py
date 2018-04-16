@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+f = open("index.h", "w")
+f.write("#ifndef index_h\n")
+f.write("#define index_h\n")
+f.write("#include <iostream>\n")
+f.write("void show_index() {\n")
+f.write("std::cout << 1 << std::endl;\n")
+f.write("}\n")
+f.write("#endif\n")
+f.close()
